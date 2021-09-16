@@ -13,8 +13,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
           spec: app101/*
     strategy:
       fail-fast: false  
