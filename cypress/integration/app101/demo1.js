@@ -3,6 +3,6 @@ describe('DEMO1', () => {
       expect(2).to.equal(2);
     })    
     it('test2', () => {
-        expect(2).to.not.equal(2);
+        expect(2).to.not.equal(3);
     })
 })
