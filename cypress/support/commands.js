@@ -41,6 +41,6 @@ Cypress.Commands.add("loginMeIn", () => {
     cy.get('#P101_PASSWORD').type(password, {sensitive: true, log:false}); 
     cy.get('#P101_LOGIN').click();
     //cy.clickButtonwithID('#P101_LOGIN');
-    cy.url().should("contain", "101/sample-database-application");
+    cy.url().should("contain", "/sample-database-application");
     cy.get('.t-HeroRegion-title').should("contain","Sample Database Application");    
   });
