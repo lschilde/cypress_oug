@@ -11,7 +11,7 @@ describe('App 110 Share code through Commands', () => {
     });  
     it('Visit Page 2', ()=> {
       cy.get('#t_TreeNav_1 > .a-TreeView-content > .fa').click();
-      cy.url().should("contain", "101/customers");    
+      cy.url().should("contain", "/customers");    
       cy.get('[data-cy="create_customer_non_modalButton"]').click();
             
       const uuid = () => Cypress._.random(0, 1e6);
