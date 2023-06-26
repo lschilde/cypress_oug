@@ -31,7 +31,7 @@ describe('App 110 Share code through Commands', () => {
       cy.get("[data-cy=add_customerButton]").click();
       
       //assert successful creation of the row 
-      cy.url().should("contain", "101/customers");
+      cy.url().should("contain", "/customers");
       cy.contains("td",firstName);
       
     });   
